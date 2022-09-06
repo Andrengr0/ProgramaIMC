@@ -34,6 +34,9 @@ $(()=>{
         }else if(imc >= 40 && imc < 45){
             var diagnostico = "Você está com obesidade grau 3!"
             return diagnostico;
+        }else{
+            var diagnostico = "Informação incorreta, tente novamente!"
+            return diagnostico;
         }
     }
 
