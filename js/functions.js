@@ -42,6 +42,11 @@ $(()=>{
 
 
     $('.mostrarResultado').click(()=>{
+        function clear(){
+            $('.card2 p').remove();
+        }
+        clear();
+
         var pesoC = parseInt($('select#peso option:checked').text());
         var alturaC = parseInt($('select#altura option:checked').text());
 
