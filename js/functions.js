@@ -5,11 +5,11 @@ $(()=>{
     var peso = $('#peso');
     var altura = $('#altura');
 
-    for (i = 20; i <= 200; i++) {
+    for (i = 1; i <= 200; i++) {
         peso.append('<option value="+ item +">' + i + '</option>');
     }
 
-    for (i = 80; i <= 250; i++) {
+    for (i = 20; i <= 250; i++) {
         altura.append('<option value="+ item +">' + i + '</option>');
     }
 
