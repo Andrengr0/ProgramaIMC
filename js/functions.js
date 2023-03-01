@@ -1,7 +1,9 @@
 
 
 $(()=>{
-
+    
+    // Exibindo as opções de peso e altura para escolha do usuário:
+    
     var peso = $('#peso');
     var altura = $('#altura');
 
@@ -13,6 +15,8 @@ $(()=>{
         altura.append('<option value="+ item +">' + i + '</option>');
     }
 
+    
+    // Função para diagnosticar o IMC conforme o cálculo obtido pelas informações do usuário:
     
     function diagnostico(imc){
 
@@ -40,7 +44,8 @@ $(()=>{
         }
     }
 
-
+    // Funcionalidade para mostrar o resultado na caixa presente na página do site
+    
     $('.mostrarResultado').click(()=>{
         function clear(){
             $('.card2 p').remove();
